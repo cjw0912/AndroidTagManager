@@ -6,6 +6,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import kr.ac.android.tagmanager.ui.main.HomeScreen
+import kr.ac.android.tagmanager.ui.nai.NaiHomeScreen
 
 @Composable
 fun AppNavGraph(modifier : Modifier = Modifier){
@@ -15,7 +16,18 @@ fun AppNavGraph(modifier : Modifier = Modifier){
         //1단계: 홈 화면(버튼 3개: NAI/Comfy/Web)
         composable("home"){
             HomeScreen(
-                onNavigateToPage1 = {navController.navigate("nai")}
+                onNavigateToNai = {
+                    navController.navigate("nai")
+                    //TODO
+                    TODO(reason = "AI별 버튼 및 해당 페이지 연결 필요")
+                }
+            )
+        }
+        composable("nai") {
+            //TODO "NAI->작가 조합, 단일 작가, 캐릭터..."
+            TODO(reason = "세부 페이지 제작 및 연결해야함")
+            NaiHomeScreen(
+
             )
         }
     }
