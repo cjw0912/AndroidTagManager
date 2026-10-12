@@ -12,23 +12,25 @@ import kr.ac.android.tagmanager.ui.nai.NaiHomeScreen
 fun AppNavGraph(modifier : Modifier = Modifier){
     val navController = rememberNavController()
     //startDestination: 앱이 켜졌을 때 가장 먼저 보여줄 화면 주소
-    NavHost(navController = navController, startDestination = "home", modifier = modifier){
+    NavHost(
+        navController = navController,
+        startDestination = "home",
+        modifier = modifier
+    ){
         //1단계: 홈 화면(버튼 3개: NAI/Comfy/Web)
         composable("home"){
             HomeScreen(
                 onNavigateToNai = {
-                    navController.navigate("nai")
-                    //TODO
-                    TODO(reason = "AI별 버튼 및 해당 페이지 연결 필요")
+//                    navController.navigate("nai")
+                    //AI별 버튼 및 해당 페이지 연결 필요
                 }
             )
         }
-        composable("nai") {
-            //TODO "NAI->작가 조합, 단일 작가, 캐릭터..."
-            TODO(reason = "세부 페이지 제작 및 연결해야함")
-            NaiHomeScreen(
-
-            )
-        }
+//        composable("nai") {
+//            //NAI->작가 조합, 단일 작가, 캐릭터...
+//            NaiHomeScreen(
+//
+//            )
+//        }
     }
 }
