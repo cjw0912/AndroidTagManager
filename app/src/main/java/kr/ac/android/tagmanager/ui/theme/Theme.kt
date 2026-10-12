@@ -1,6 +1,5 @@
-package kr.ac.doowon.tagmanager.ui.theme
+package kr.ac.android.tagmanager.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

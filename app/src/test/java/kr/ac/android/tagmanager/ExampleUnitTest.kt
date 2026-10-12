@@ -1,4 +1,4 @@
-package kr.ac.doowon.tagmanager
+package kr.ac.android.tagmanager
 
 import org.junit.Test
 

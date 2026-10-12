@@ -1,4 +1,4 @@
-package kr.ac.doowon.tagmanager.ui.theme
+package kr.ac.android.tagmanager.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
