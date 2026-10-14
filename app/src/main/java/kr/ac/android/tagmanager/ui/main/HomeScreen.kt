@@ -58,7 +58,7 @@ fun HomeScreen(
                     Spacer(modifier = Modifier.height(4.dp))
 
                     Text(
-                        text = "NAI",
+                        text = "Test",
                         fontSize = 16.sp
                     )
                 }
@@ -66,18 +66,50 @@ fun HomeScreen(
         }
         item {
             Button(
-                {},
-                modifier = Modifier.height(80.dp)
+                {  },
+                modifier = Modifier.height(80.dp),
+                shape = RoundedCornerShape(16.dp)
             ) {
-                Text("Test1")
+                Column(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalAlignment = Alignment.Start
+                ) {
+                    Icon(
+                        painter = painterResource(id = R.drawable.icon_placeholder),
+                        contentDescription = "아이콘 이미지",
+                        modifier = Modifier.size(40.dp)
+                    )
+                    Spacer(modifier = Modifier.height(4.dp))
+
+                    Text(
+                        text = "Test1",
+                        fontSize = 16.sp
+                    )
+                }
             }
         }
         item {
             Button(
-                {},
-                modifier = Modifier.height(80.dp)
+                {  },
+                modifier = Modifier.height(80.dp),
+                shape = RoundedCornerShape(16.dp)
             ) {
-                Text("Test2")
+                Column(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalAlignment = Alignment.Start
+                ) {
+                    Icon(
+                        painter = painterResource(id = R.drawable.icon_placeholder),
+                        contentDescription = "아이콘 이미지",
+                        modifier = Modifier.size(40.dp)
+                    )
+                    Spacer(modifier = Modifier.height(4.dp))
+
+                    Text(
+                        text = "Test2",
+                        fontSize = 16.sp
+                    )
+                }
             }
         }
     }

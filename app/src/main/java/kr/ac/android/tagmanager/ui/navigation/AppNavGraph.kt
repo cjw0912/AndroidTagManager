@@ -20,17 +20,14 @@ fun AppNavGraph(modifier : Modifier = Modifier){
         //1단계: 홈 화면(버튼 3개: NAI/Comfy/Web)
         composable("home"){
             HomeScreen(
-                onNavigateToNai = {
-//                    navController.navigate("nai")
-                    //AI별 버튼 및 해당 페이지 연결 필요
-                }
+                onNavigateToNai = { navController.navigate("nai") }
             )
         }
-//        composable("nai") {
-//            //NAI->작가 조합, 단일 작가, 캐릭터...
-//            NaiHomeScreen(
-//
-//            )
-//        }
+        composable("nai") {
+            //NAI->작가 조합, 단일 작가, 캐릭터...
+            NaiHomeScreen(
+                onNavigateToNaiStyle = {}
+            )
+        }
     }
 }
